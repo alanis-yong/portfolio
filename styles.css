@@ -640,7 +640,17 @@ h3 {
     transition: 0.3s;
   }
 
-  .card-container {
+ .card-container {
+    display: grid;
     grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px 0;
+    width: 100%;
+  }
+
+  section {
+    opacity: 1 !important;
+    transform: none !important;
+    margin: 0 15px; 
   }
 }
