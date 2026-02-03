@@ -278,6 +278,7 @@ section.visible {
   gap: 2rem;
   box-sizing: border-box;
   padding: 0 2rem;
+  min-height: 100dvh;
 }
 
 .hero h1 {
