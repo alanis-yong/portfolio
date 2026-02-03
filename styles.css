@@ -254,7 +254,7 @@ section {
   transform: translateY(50px);
   transition: opacity 0.8s ease, transform 0.8s ease;
   margin: 0;  
-  width: 100%;  
+  width: 90%;  
   box-sizing: border-box;
 }
 
