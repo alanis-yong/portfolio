@@ -254,6 +254,7 @@ section {
   transform: translateY(50px);
   transition: opacity 0.8s ease, transform 0.8s ease;
   margin: 0 30px;
+  will-change: transform, opacity; 
 }
 
 section::before {
@@ -345,9 +346,6 @@ h3 {
   padding: 40px 20px;
   max-width: 850px;
   margin: 0 auto;
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-  will-change: transform;
 }
 
 .card {
