@@ -4,10 +4,6 @@
   color: black;
 }
 
-html {
-  scroll-behavior: smooth;
-  overflow-anchor: none; 
-
 html,
 body {
   height: 100%;
