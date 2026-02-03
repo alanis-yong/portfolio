@@ -27,7 +27,8 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: -1;
+  z-index: 0;
+  pointer-events: none;
   filter: blur(60px);
 }
 
@@ -86,6 +87,12 @@ body {
   100% {
     transform: translate(0, 0) scale(1) rotate(0deg);
   }
+}
+
+.content,
+section {
+  position: relative;
+  z-index: 1;
 }
 
 .layout {
@@ -246,7 +253,7 @@ a:visited {
 .content {
   display: flex;
   flex-direction: column;
-  overflow-y: auto;
+  overflow-y: visible;
 }
 
 section {
