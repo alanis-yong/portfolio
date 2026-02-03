@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website Home Page</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="my-script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Lato:ital,wght@0,400;1,100&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.emailjs.com/dist/email.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="blob-c">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="blob blob-4"></div>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <div class="layout">
+      <button class="menu-toggle" id="menuOpen" aria-label="Open Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <aside class="sidebar" id="sidebar">
+        <button class="menu-close" id="menuClose" aria-label="Close Menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <img src="assets/portrait.png" alt="Portrait" />
+        <nav>
+          <ul>
+            <li>
+              <a href="#about"><span>About Me</span></a>
+            </li>
+            <li>
+              <a href="#project"><span>Projects</span></a>
+            </li>
+            <li>
+              <a href="#resume"><span>Resume</span></a>
+            </li>
+            <li>
+              <a href="#contact"><span>Contact</span></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="container-icon">
+          <a href="https://github.com/alanis-yong" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/alanis-yong-5a2512317"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </aside>
+
+      <main class="content">
+        <section class="hero">
+          <h1>
+            Hi, there! I'm Alanis Yong.<br />
+            I’m learning to design and build responsive, well-designed web apps.
+          </h1>
+          <a href="#about" class="scroll-down" aria-label="Scroll to content">
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+        </section>
+        <section id="about">
+          <h3>About Me</h3>
+          <div class="about-content">
+            <p>
+              After completing secondary school, I began my career in
+              operational and customer-facing roles, where I was later
+              introduced to web development through maintaining a company
+              website using HTML and CSS. Through hands-on experimentation and
+              self-directed learning, I developed a strong interest in software
+              development and problem-solving.
+            </p>
+            <p>
+              In September 2024, I enrolled in Sigma Coding Bootcamp, a
+              structured, self-paced program focused on full-stack development
+              fundamentals. Since then, I have been building my front-end skills
+              through coursework and practical projects, developing functional
+              web applications using modern web technologies.
+            </p>
+            <p>
+              Looking ahead, I plan to expand into back-end development with the
+              goal of growing into a full-stack developer. I am committed to
+              continuous learning and to building reliable, real-world digital
+              solutions.
+            </p>
+            <p>
+              Skills I’ve learned so far:
+              <span class="skills">
+                <i class="fa-brands fa-html5" title="HTML"></i>
+                <i class="fa-brands fa-css3-alt" title="CSS"></i>
+                <i class="fa-brands fa-js" title="JavaScript"></i>
+                <i class="fa-brands fa-react" title="React JS"></i>
+              </span>
+            </p>
+          </div>
+        </section>
+        <section id="project">
+          <div id="project-container">
+            <h3>Projects</h3>
+            <div class="card-container">
+              <div class="card">
+                <a
+                  href="https://alanis-yong.github.io/eCommerce/"
+                  target="_blank"
+                  class="card-link"
+                >
+                  <img src="assets/eCommerce-project.png" />
+                  <h4>eCommerce</h4>
+                  <p>
+                    A responsive storefront that manages a shopping cart and
+                    real-time totals using React Redux for global state
+                    management. This project allowed me to understand
+                    centralized data flow and automated deployment via GitHub
+                    Actions.
+                  </p>
+                </a>
+              </div>
+              <div class="card">
+                <a
+                  href="https://alanis-yong.github.io/react-todo-list/"
+                  target="_blank"
+                  class="card-link"
+                >
+                  <img src="assets/to-do-list-project.png" />
+                  <h4>To Do List</h4>
+                  <p>
+                    A dynamic task management application built with React that
+                    utilizes the Context API for global state management and
+                    LocalStorage for persistent data storage. This project
+                    demonstrates my proficiency in handling complex component
+                    lifecycles, custom hooks, and ensuring a seamless user
+                    experience across browser sessions.
+                  </p>
+                </a>
+              </div>
+              <div class="card">
+                <a
+                  href="https://alanis-yong.github.io/currency-converter-sigma/"
+                  target="_blank"
+                  class="card-link"
+                >
+                  <img src="assets/currency-converter.png" />
+                  <h4>Currency Converter</h4>
+                  <p>
+                    A functional tool that calculates exchange rates for over
+                    100 global currencies using a live REST API. This project
+                    allowed me to master Asynchronous JavaScript (Async/Await),
+                    the Fetch API for real-time data retrieval, and dynamic DOM
+                    updates to provide a seamless user experience.
+                  </p>
+                </a>
+              </div>
+              <div class="card">
+                <a
+                  href="https://alanis-yong.github.io/authentication-app-sigma/"
+                  target="_blank"
+                  class="card-link"
+                >
+                  <img src="assets/authentication-project.png" />
+                  <h4>Authentication Interface</h4>
+                  <p>
+                    An authentication system that toggles between login and
+                    registration states using Vanilla JavaScript. This project
+                    allowed me to implement form validation logic, manage
+                    in-memory user data, and design a modern, dark-themed UI
+                    with advanced CSS techniques like text-clipping and
+                    responsive breakpoints.
+                  </p>
+                </a>
+              </div>
+              <div class="card">
+                <a
+                  href="https://alanis-yong.github.io/family-app-sigma/"
+                  target="_blank"
+                  class="card-link"
+                >
+                  <img src="assets/family-list-project.png" />
+                  <h4>OOP-Based Data Management System</h4>
+                  <p>
+                    A dynamic data management application that uses JavaScript
+                    Classes (OOP) to create, track, and update family records.
+                    This project allowed me to practice structured data
+                    modeling, array manipulation, and dynamic table rendering
+                    while implementing real-time data updates.
+                  </p>
+                </a>
+              </div>
+              <div class="card">
+                <a
+                  href="https://alanis-yong.github.io/translator-app-sigma/"
+                  target="_blank"
+                  class="card-link"
+                >
+                  <img src="samplepic.png" />
+                  <h4>Multilingual Phrase Translator</h4>
+                  <p>
+                    A responsive translation tool built with Vanilla JavaScript
+                    that maps English keywords to multiple global languages.
+                    This project allowed me to practice DOM manipulation,
+                    modular JavaScript (ES Modules), and mobile-first CSS
+                    design.
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="resume">
+          <h3>Resume</h3>
+          <img src="assets/resume.png" />
+          <a
+            href="assets/resume.pdf"
+            class="download-btn"
+            download="Alanis_Yong_Resume.pdf"
+          >
+            Download Resume PDF
+          </a>
+        </section>
+        <section id="contact">
+          <h3>Contact</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <input id="name" name="user_name" required placeholder="Name" />
+              <span class="error-message" id="error-name"></span>
+            </div>
+
+            <div class="form-group">
+              <input
+                id="email"
+                name="user_email"
+                required
+                placeholder="Email Address"
+              />
+              <span class="error-message" id="error-email"></span>
+            </div>
+
+            <div class="form-group">
+              <input
+                id="contact_no"
+                name="contact_no"
+                required
+                placeholder="Contact No"
+              />
+              <span class="error-message" id="error-contact"></span>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                required
+                placeholder="Type your message"
+              ></textarea>
+              <span class="error-message" id="error-message"></span>
+            </div>
+
+            <button type="submit">Send</button>
+            <div id="form-success" class="success-message"></div>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
