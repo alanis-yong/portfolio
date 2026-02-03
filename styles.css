@@ -253,11 +253,9 @@ a:visited {
 
 section {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(50px);
   transition: opacity 0.8s ease, transform 0.8s ease;
   margin: 0 30px;
-  will-change: transform, opacity; 
-  backface-visibility: hidden;
 }
 
 section::before {
