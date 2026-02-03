@@ -649,8 +649,14 @@ h3 {
   }
 
   section {
-    opacity: 1 !important;
-    transform: none !important;
-    margin: 0 15px; 
+    opacity: 0; 
+    transform: translateY(30px); 
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    margin: 0 20px;
+  }
+
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
