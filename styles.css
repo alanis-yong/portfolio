@@ -254,6 +254,8 @@ section {
   transform: translateY(50px);
   transition: opacity 0.8s ease, transform 0.8s ease;
   margin: 0 30px;
+  width: 100%; 
+  box-sizing: border-box;
 }
 
 section::before {
