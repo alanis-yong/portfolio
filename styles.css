@@ -27,8 +27,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 0;
-  pointer-events: none;
+  z-index: -1;
   filter: blur(60px);
 }
 
@@ -89,17 +88,11 @@ body {
   }
 }
 
-.content,
-section {
-  position: relative;
-  z-index: 1;
-}
-
 .layout {
   display: grid;
   grid-template-columns: 260px 1fr;
   grid-template-rows: 1fr;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .sidebar {
@@ -253,7 +246,7 @@ a:visited {
 .content {
   display: flex;
   flex-direction: column;
-  overflow-y: visible;
+  overflow-y: auto;
 }
 
 section {
@@ -261,7 +254,6 @@ section {
   transform: translateY(50px);
   transition: opacity 0.8s ease, transform 0.8s ease;
   margin: 0 30px;
-  will-change: transform, opacity; 
 }
 
 section::before {
