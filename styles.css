@@ -253,9 +253,7 @@ section {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.8s ease, transform 0.8s ease;
-  margin: 20px;  
-  width: 100%;  
-  box-sizing: border-box;
+  margin: 0 30px;
 }
 
 section::before {
