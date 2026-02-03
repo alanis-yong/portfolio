@@ -535,15 +535,12 @@ h3 {
     font-size: 2rem;
   }
 
-  .about-content, 
-  .card-container {
-    width: 90% !important;
-    max-width: 100% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    padding: 20px !important; 
-    box-sizing: border-box; 
-  }
+  .about-content {
+    width: 100%;   
+    max-width: 350px;  
+    margin: 0 auto;
+    box-sizing: border-box;
+ }
 
   #contact-form {
     grid-template-columns: 1fr;
@@ -646,9 +643,10 @@ h3 {
 
   .card {
     width: 100%;
-    margin: 0 0 20px 0;
-    -webkit-transform: translateZ(0);
-  }
+    max-width: 350px;
+    margin: 0 auto; 
+    box-sizing: border-box;
+ }
 
   .container-icon {
     margin-top: 40px;
@@ -669,20 +667,23 @@ h3 {
     transition: 0.3s;
   }
 
-  .card-container {
-    display: grid !important; 
-    grid-template-columns: 1fr;
-    gap: 20px;
+ .card-container {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center; 
+    gap: 25px;       
+    padding: 0 !important; 
     width: 100%;
-    height: auto;            
-    visibility: visible !important; 
-    opacity: 1 !important;
-  }
+ }
 
   section {
-  opacity: 1 !important;
-  transform: none !important;
-  z-index: 10;
-  position: relative;
-}
+    transition: opacity 0.8s ease, transform 0.8s ease !important;
+    margin: 0 auto 40px auto;
+    width: 90%; 
+ }
+  
+  section.visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+ }
 }
