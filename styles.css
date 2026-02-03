@@ -11,6 +11,8 @@ body {
   font-family: 'Mulish', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  overflow-y: auto; 
+  scrollbar-gutter: stable;
 }
 
 body {
