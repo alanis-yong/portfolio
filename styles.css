@@ -245,6 +245,8 @@ a:visited {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  padding-bottom: 200px; 
+  scroll-behavior: smooth;
 }
 
 section {
