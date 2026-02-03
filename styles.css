@@ -253,7 +253,9 @@ section {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.8s ease, transform 0.8s ease;
-  margin: 0 30px;
+  margin: 0;  
+  width: 100%;  
+  box-sizing: border-box;
 }
 
 section::before {
@@ -340,10 +342,10 @@ h3 {
 
 .card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-  gap: 30px; 
-  padding: 20px;
-  max-width: 850px; 
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 40px 20px;
+  max-width: 850px;  
   margin: 0 auto; 
   box-sizing: border-box;
 }
