@@ -522,12 +522,12 @@ h3 {
   .hero {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center;  
+    justify-content: center;
+    align-items: center;
     min-height: 100dvh; 
-    text-align: center;
-    padding: 20px;    
-    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 20px;
+    width: 100%;
   }
   
   .hero h1 {
@@ -661,5 +661,11 @@ h3 {
     visibility: visible !important; 
     opacity: 1 !important;
   }
-    }
+
+  section {
+  opacity: 1 !important;
+  transform: none !important;
+  z-index: 10;
+  position: relative;
+}
 }
