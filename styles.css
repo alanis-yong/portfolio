@@ -653,6 +653,13 @@ h3 {
   }
 
   .card-container {
+    display: grid !important; 
     grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    height: auto;            
+    visibility: visible !important; 
+    opacity: 1 !important;
   }
+    }
 }
