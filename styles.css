@@ -11,6 +11,8 @@ body {
   font-family: 'Mulish', sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  overflow-y: auto; 
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -393,7 +395,7 @@ h3 {
 #resume img {
   display: block;
   margin: 20px auto;
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
