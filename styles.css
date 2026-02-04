@@ -541,6 +541,9 @@ h3 {
 
   .layout {
     grid-template-columns: 1fr;
+    display: block; 
+    height: auto;
+    min-height: 100vh;
   }
 
   .sidebar {
